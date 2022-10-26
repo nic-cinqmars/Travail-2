@@ -34,15 +34,21 @@ ZERO_EQU	equ	0x00	; La directive "equ" permet d'associer une valeur à une étique
 				;   Notes: ZERO_EQU ne représente pas un espace-mémoire. 
 				;          ZERO_EQU peut être utilisé pour définir une constante ou une adresse. 
 
-ZONE1_UDATA	udata 0x60 	; La directive "udata" (unsigned data) permet de définir l'adresse du début d'une zone-mémoire
+Zone_udata1	udata 0x60 	; La directive "udata" (unsigned data) permet de définir l'adresse du début d'une zone-mémoire
 				; de la mémoire-donnée (ici 0x60).
 				; Les directives "res" qui suivront, définiront des espaces-mémoire à partir de cette adresse.
 				; La zone doit porter un nom unique (ici "ZONE1_UDATA") car on peut en définir plusieurs.
-Var1		res 1
-Var2		res 1
-COUNT	 	res 1 		; La directive "res" réserve un seul octet qui pourra être référencé à l'aide du mot "COUNT".
-				; L'octet sera localisé à l'adresse 0x60 (dans la banque 0).
-
+A_octet3	res 1
+A_octet2	res 1		; La directive "res" réserve un seul octet qui pourra être référencé à l'aide du mot "COUNT".
+A_octet1	res 1		; L'octet sera localisé à l'adresse 0x60 (dans la banque 0).
+A_octet0	res 1
+B_octet3	res 1
+B_octet2	res 1
+B_octet1	res 1
+B_octet0	res 1
+	
+Zone_udata2	udata 0x80
+	
 RST_CODE 	code 000h 	; La directive "code" définit l'adresse de la prochaine instruction qui suit cette directive.
 				; Toutes les autres instructions seront positionnées à la suite.
 				; Elles formeront une zone dont le nom sera "RST_CODE".
