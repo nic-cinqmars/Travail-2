@@ -1,0 +1,48 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Wed Oct 26 17:22:58 2022
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                 RST_CODE       code   0x000000    program   0x000004
+                   .cinit    romdata   0x000004    program   0x000002
+                 PRG_CODE       code   0x000020    program   0x000014
+.config_300001_BUILD/DEFAULT/PRODUCTION/TRAVAIL    romdata   0x300001    program   0x000001
+.config_300002_BUILD/DEFAULT/PRODUCTION/TRAVAIL    romdata   0x300002    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/TRAVAIL    romdata   0x300003    program   0x000001
+.config_300005_BUILD/DEFAULT/PRODUCTION/TRAVAIL    romdata   0x300005    program   0x000001
+.config_300006_BUILD/DEFAULT/PRODUCTION/TRAVAIL    romdata   0x300006    program   0x000001
+              ZONE1_UDATA      udata   0x000060       data   0x000003
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000020    0x000033      
+                            0x300001    0x300003      
+                            0x300005    0x300006      
+            31 out of 66584 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    Start   0x000020    program     static C:\Users\nicci\OneDrive\Desktop\Travail 2\Travail 2.X\travail-2.asm
+                    COUNT   0x000062       data     static C:\Users\nicci\OneDrive\Desktop\Travail 2\Travail 2.X\travail-2.asm
+                     Var1   0x000060       data     static C:\Users\nicci\OneDrive\Desktop\Travail 2\Travail 2.X\travail-2.asm
+                     Var2   0x000061       data     static C:\Users\nicci\OneDrive\Desktop\Travail 2\Travail 2.X\travail-2.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                    Start   0x000020    program     static C:\Users\nicci\OneDrive\Desktop\Travail 2\Travail 2.X\travail-2.asm
+                     Var1   0x000060       data     static C:\Users\nicci\OneDrive\Desktop\Travail 2\Travail 2.X\travail-2.asm
+                     Var2   0x000061       data     static C:\Users\nicci\OneDrive\Desktop\Travail 2\Travail 2.X\travail-2.asm
+                    COUNT   0x000062       data     static C:\Users\nicci\OneDrive\Desktop\Travail 2\Travail 2.X\travail-2.asm
+
+
